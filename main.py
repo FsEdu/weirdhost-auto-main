@@ -10,8 +10,8 @@ def add_server_time(server_url="https://hub.weirdhost.xyz/server/6071259e"):
     """
     # 从环境变量获取登录凭据
     remember_web_cookie = os.environ.get('REMEMBER_WEB_COOKIE')
-    pterodactyl_email = os.environ.get('PTERODACTYL_EMAIL')
-    pterodactyl_password = os.environ.get('PTERODACTYL_PASSWORD')
+    pterodactyl_email = os.environ.get('amara.yy08@gmail.com')
+    pterodactyl_password = os.environ.get('+.Yuki0609.')
 
     # 检查是否提供了任何登录凭据
     if not (remember_web_cookie or (pterodactyl_email and pterodactyl_password)):
