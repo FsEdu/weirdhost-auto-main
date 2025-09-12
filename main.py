@@ -9,9 +9,9 @@ def add_server_time(server_url="https://hub.weirdhost.xyz/server/6071259e"):
     此函数设计为每次GitHub Actions运行时执行一次。
     """
     # 从环境变量获取登录凭据
-    remember_web_cookie = os.environ.get('eyJpdiI6IjBoak5JMEgxZkdObEJvSGxFc2I4YUE9PSIsInZhbHVlIjoiNCtjaGhmbHhiajI5MUwxWXF1UHJndVVHWW1oaGc1ZHovNUhKYTdVMGlwZTB6T3B5ZmVHUnlJZElISWZWMk9mTGdBVEYvOFV2VmkwWVcrb0xQNU9hQW55RzZOKzNaU25rZ3R0YWJmWXpUajdnZllBSHlHakJqa0RZVGYwR1loVXQiLCJtYWMiOiI2NDdkNDFlOGIxM2JkOTFkY2JkOWNjYzY5ZmVlOTllZGM1ZWJmZDQyYzcwZDQ0ZTNkN2JhYzRiMzNjZDA5NjA2IiwidGFnIjoiIn0%3D; pterodactyl_session=eyJpdiI6IlJGUVN2ZkdVZkU3cjEzV0FtRHV4Smc9PSIsInZhbHVlIjoiYytxcW4yTkpLOEpURUNaUUdVK0gvemdobWtRWTJNYzg4SnRpRG1MeUE2N0ZuUWp5NVREazU1QmtPTGp1U1VLSEg2aUROblNRbGxjYk5UTGpMajg0NTNGVlp4Z3BsUmRwNHRGbjFlT05Xd2lFdHhqMXdqR0hucm5KYVlRUlJLTVgiLCJtYWMiOiI2MjA2YjQwNDI2NzI5OWNkYTYwNGVmN2RlMTAxOGZkY2Q1MzFiMTZkMzVmYjhkODBiNDUyMGFkMTM4OTYzNjZhIiwidGFnIjoiIn0%3D')
-    pterodactyl_email = os.environ.get('amara.yy08@gmail.com')
-    pterodactyl_password = os.environ.get('+.Yuki0609.')
+    remember_web_cookie = os.environ.get('REMEMBER_WEB_COOKIE')
+    pterodactyl_email = os.environ.get('PTERODACTYL_EMAIL')
+    pterodactyl_password = os.environ.get('PTERODACTYL_PASSWORD')
 
     # 检查是否提供了任何登录凭据
     if not (remember_web_cookie or (pterodactyl_email and pterodactyl_password)):
